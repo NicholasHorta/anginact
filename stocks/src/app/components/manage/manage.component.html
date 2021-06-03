@@ -9,7 +9,7 @@
                 <tr *ngFor="let symbol of symbols">
                     <td class="mdl-data-table__cell--non-numeric">{{symbol}}</td>
                     <td style="padding-top:6px">
-                        <button class="mdl-button">Remove</button>
+                        <button class="mdl-button" (click)="remove(symbol)">Remove</button>
                     </td>
                 </tr>
             </tbody>
